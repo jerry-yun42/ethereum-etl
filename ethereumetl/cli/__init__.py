@@ -42,6 +42,7 @@ from ethereumetl.cli.extract_token_transfers import extract_token_transfers
 from ethereumetl.cli.extract_tokens import extract_tokens
 from ethereumetl.cli.filter_items import filter_items
 from ethereumetl.cli.get_block_range_for_date import get_block_range_for_date
+from ethereumetl.cli.get_block_range_for_date_hour import get_block_range_for_date_hour
 from ethereumetl.cli.get_block_range_for_timestamps import get_block_range_for_timestamps
 from ethereumetl.cli.get_keccak_hash import get_keccak_hash
 from ethereumetl.cli.stream import stream
@@ -74,6 +75,7 @@ cli.add_command(stream, "stream")
 
 # utils
 cli.add_command(get_block_range_for_date, "get_block_range_for_date")
+cli.add_command(get_block_range_for_date_hour, "get_block_range_for_date_hour")
 cli.add_command(get_block_range_for_timestamps, "get_block_range_for_timestamps")
 cli.add_command(get_keccak_hash, "get_keccak_hash")
 cli.add_command(extract_csv_column, "extract_csv_column")
